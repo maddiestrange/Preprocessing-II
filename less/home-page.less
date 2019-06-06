@@ -1,12 +1,26 @@
 .home {
 
+  header{
+    display:flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    border-bottom: 2px dashed @navigation-border;
+    a{
+      font-size: 14px;
+      color: gray;
+      text-decoration: none;
+    }
+    img{
+      padding-bottom: 20px;
+    }
+  }
+
   .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
     
     .text-content {
       width: 48%;
@@ -56,6 +70,9 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+      .btn{
+        .buttons(83%, 14px,#028077, center, 15px, white, 20px);
+      }
     }
   }
 }// home
